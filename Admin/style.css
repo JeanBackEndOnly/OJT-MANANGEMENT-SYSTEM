@@ -1,0 +1,33 @@
+.request-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 170px;
+    height: 90px;
+}
+
+.icon {
+    margin-right: 10px;
+    color: #007bff; /* Change the color as needed */
+    font-size: 50px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+    margin-left: -30px;
+}
+
+.request-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 20px; /* Adjust the font size as needed */
+}
+
+.request-count {
+    font-size: 50px;
+    margin-left: 50px;
+}

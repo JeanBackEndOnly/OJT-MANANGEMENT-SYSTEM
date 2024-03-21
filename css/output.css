@@ -1,0 +1,494 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(41, 41, 41);
+  color: white;
+  width: 100vw;
+}
+
+.side {
+  background-color: rgb(253, 207, 2);
+  width: 22rem;
+  height: 49rem;
+  transform: translate(-9rem, -9rem) rotate(30deg);
+  position: fixed;
+  z-index: -1;
+  text-align: start;
+}
+
+.in {
+  text-align: center;
+  padding-top: 1rem;
+  height: 7rem;
+  width: 28rem;
+  margin-top: 4rem;
+  font-size: 2.8rem;
+  font-family: sans-serif;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+  border-radius: 10rem;
+  font-style: italic;
+  background-color: rgb(253, 207, 2);
+  right: -8rem;
+  transform: rotate(-30deg) translateY(10rem);
+}
+
+.in::before {
+  content: 'Management System';
+  display: grid;
+  place-items: center;
+  position: absolute;
+  height: 8rem;
+  width: 28rem;
+  font-size: 1.9rem;
+  font-family: calibri;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  z-index: 2;
+}
+
+.but {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 60%;
+
+}
+
+.but label {
+  /* display: none; */
+  padding: .5rem 3rem;
+  letter-spacing: 3px;
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 600;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 10px;
+  border: solid rgb(161, 161, 161) 1.3px;
+  transition: color .3s;
+}
+
+.but label:hover {
+  border: solid rgb(253, 207, 2) 1.3px;
+  color: rgb(253, 207, 2);
+
+}
+
+.yelup img,.yelup2 img{
+  height: 2rem;
+}
+.yelup{
+  width:2rem;
+  position: absolute;
+  z-index: -1;
+  right: 6rem;
+  top: 15rem;
+}
+.yelup2{
+  width:2rem;
+  position: absolute;
+  z-index: -1;
+  right: 18rem;
+  top: 37rem;
+  transform: rotate(45deg);
+}
+
+
+.entry {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  
+}
+#signup form {
+  display: grid;
+  place-items: center;
+}
+#logn form {
+  padding: 3.5rem 3.5rem;
+  background: rgba(54, 54, 54, 0.68);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(12.5px);
+  border: 1px solid rgba(54, 54, 54, 0.48);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 11px;
+  position: relative;
+}
+
+#logn form input , #signup input{ 
+  color: rgb(255, 255, 255);
+  height: 2.4rem;
+  padding: 0 2.4rem;
+  width: 12rem;
+  border-radius: 13px;
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background-color: rgb(41, 41, 41);
+  border: 1px solid rgba(85, 85, 85, 0.85);
+}
+#signup form textarea{
+  color: rgb(255, 255, 255);
+  padding: 0 2.4rem;
+  max-height: 3rem;
+  min-height: 3rem;
+  max-width: 12rem;
+  min-width: 12rem;
+  border-radius: 13px;
+  backdrop-filter: blur(13.1px);
+  -webkit-backdrop-filter: blur(13.1px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background-color: rgb(41, 41, 41);
+  border: 1px solid rgba(85, 85, 85, 0.85);
+}
+#ch,#ch2{
+  visibility: hidden;
+  position: absolute;
+}
+#btlog , #btsign{
+  width: 100%;
+  border-radius:3px;
+  height: 2.5rem;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+#logn {
+  display: grid;
+  place-items: center;
+}
+#logn h2{
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+  font-family:  arial   ;
+}
+ 
+ 
+.betlogin , .betsign{
+
+  margin-top: .1rem;
+  row-gap: 1rem;
+  display: grid;
+  place-items: center;
+}
+.betlogin .top , .betsign .top{
+  width: 100%;
+  display: grid;
+  grid-template-columns:1fr 1fr;
+}
+.betlogin  label , .betsign label,.betlogin  button , .betsign button{
+  background-color: rgb(41, 41, 41);
+  display: grid;
+  place-items: center;
+  border: none;
+  transition: color .3s;
+  color: white;
+  border: 1px solid rgba(85, 85, 85, 0.85);
+}
+
+
+.betlogin .top label, .betsign .top label{
+  height: 1.8rem;  
+}
+.betlogin .top label a, .betsign .top label a{
+  height: 1.8rem;
+  width: 100%;  
+  display: grid;
+  place-items: center;
+}
+
+
+.betsign{
+  width: 100%;
+}
+.betlogin .top >:nth-child(2):hover a{
+  color: rgb(253, 207, 2);
+  cursor: pointer;
+}
+.betsign .top >:nth-child(1):hover a{
+  color: rgb(253, 207, 2);
+  cursor: pointer;
+}
+
+
+
+#btlog,#btsign{
+  transition: box-shadow .3s;
+}
+#btlog:hover{
+  cursor: pointer;
+  box-shadow: inset 6rem 0 0 rgb(161, 161, 161);
+}
+
+
+#btsign a{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+#btsign:hover{
+  cursor: pointer;
+  box-shadow: inset 6rem 0 0 rgb(161, 161, 161);
+}
+
+
+
+.icon-input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.icon-input-container i {
+  position: absolute;
+  left: 15px;  
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  z-index: 1;
+}
+
+.icon-input-container input {
+  padding-left: 30px;  
+  backdrop-filter: blur(13.1px);
+  -webkit-backdrop-filter: blur(13.1px);
+}
+
+.overlay{
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.678);
+}
+.entry{
+  display: none;
+}
+.entry2{
+  display: block;
+}
+
+.ovdaw{
+  display: block;
+}
+
+.but{
+  display: block;
+}
+.st{
+  display: none;
+}
+
+
+.noepek{
+  opacity: 30%;
+  font-family: sans-serif;
+  font-size: .8rem;
+}
+.nxbk i,.lasti i{
+  cursor: pointer;
+  transition: .3s;
+}
+.lasti i:hover{
+  color: rgb(161, 161, 161) !important;
+  cursor: pointer;
+}
+.nxbk i:hover{
+  color: rgb(161, 161, 161) !important;
+}
+.nxbk{
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+ 
+.lasti{
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+ 
+
+
+#first {
+  padding: 3.5rem 3.5rem;
+  background: rgba(54, 54, 54, 0.68);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(12.5px);
+  border: 1px solid rgba(54, 54, 54, 0.48);
+  text-align: center;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  row-gap: 11px;
+  width: 20rem;
+}
+#second > *{
+  margin-bottom: 11px;
+}
+#second{
+  padding: 3.5rem 3.5rem;
+  background: rgba(54, 54, 54, 0.68);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(12.5px);
+  border: 1px solid rgba(54, 54, 54, 0.48);
+  text-align: center;
+  place-items: center;
+  width: 20rem;
+  display: none;
+}
+
+
+#last{
+  padding: 3.5rem 3.5rem;
+  background: rgba(54, 54, 54, 0.68);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(12.5px);
+  border: 1px solid rgba(54, 54, 54, 0.48);
+  text-align: center;
+  place-items: center;
+  flex-direction: column;
+  row-gap: 11px;
+  width: 20rem;
+  display: none;
+}
+
+.picpackall {
+  display: grid;
+  place-items: center;
+  width: 1;
+}
+
+.packim {
+  height: 9rem;
+  width: 9rem;
+  border: solid 3px #fff;
+  border-radius: 50%;
+  place-items: end;
+
+}
+
+.packim li {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  position: relative;
+  place-items: center;
+}
+
+.packim li img {
+  height: 8.69rem;
+  width: 8.69rem;
+  border-radius: 50%;
+}
+.packim label{
+  position: absolute;
+}
+.packim .plus {
+  background-color: rgb(51, 63, 80);
+  height: 2rem;
+  cursor: pointer;
+  width: 2rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: .3s;
+  top: 80%;
+  right: 1rem;
+}
+
+#image {
+  visibility: hidden;
+  position: absolute;
+  z-index: -2;
+}
+
+
+.packim .plus:hover {
+  transform: scale(.8) ;
+}
+
+.packim .plus:hover img {
+  transform: rotate(180deg);
+}
+
+.packim .plus img {
+  transition: transform .3s;
+  height: 80%;
+  width: 80%;
+
+}
+
+
+
+
+
+
+
+/* frjs */
+
+.one {
+  display: none !important;
+}
+.two{
+  display: grid !important;
+}
+.tri{
+  display: flex !important;
+}
+
+#gn input{
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+.ml{
+
+  color: #3498db;
+}
+.ml,.fm{
+  column-gap: 4px;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+.fm{
+  color: #ff69b4;
+
+}
+#gn{
+  column-gap: 2rem;
+  display: flex !important;
+  justify-content: center;
+
+}
+#adrs{
+  padding-top: 1rem !important;
+}
+a{
+  font-size: .8rem;
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: color .3s;
+}
